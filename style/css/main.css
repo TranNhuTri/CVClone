@@ -1,5 +1,14 @@
-.appHeader {
+.appContainer {
+  width: 100vw;
+}
+
+.header {
+  width: 100vw;
   position: fixed;
+  z-index: 1;
+}
+
+.header .appHeader {
   height: 80px;
   font-size: 14rem;
   display: -webkit-box;
@@ -11,10 +20,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1;
 }
 
-.appHeader .appHeader_link {
+.header .appHeader .appHeader_link {
   position: relative;
   font-size: 28rem;
   text-decoration: none;
@@ -22,7 +30,7 @@
   font-weight: 600;
 }
 
-.appHeader .appHeader_link .appHeader_dot {
+.header .appHeader .appHeader_link .appHeader_dot {
   position: absolute;
   width: 6px;
   height: 6px;
@@ -32,7 +40,7 @@
   border-radius: 10px;
 }
 
-.appHeader .appHeader_list {
+.header .appHeader .appHeader_list {
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -41,15 +49,21 @@
   list-style: none;
 }
 
-.appHeader .appHeader_list .appHeader_item .appHeader_itemLink {
+.header .appHeader .appHeader_list .appHeader_item .appHeader_itemLink {
   text-decoration: none;
   color: #00171f;
 }
 
-.appHeader .appHeader_list .appHeader_item .appHeader_itemLink .appHeader_btn {
+.header .appHeader .appHeader_list .appHeader_item .appHeader_itemLink .appHeader_btn {
   margin: 0 10px;
   font-size: 16rem;
   font-weight: 600;
+}
+
+.header--active {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 20px #ccc;
+          box-shadow: 0 0 20px #ccc;
 }
 
 .home {
@@ -58,7 +72,7 @@
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
 }
 
 .home .homeContainer .homeImgContainer {
@@ -78,6 +92,40 @@
   padding-top: 30vh;
 }
 
+.home .homeContent .homeContentList {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.home .homeContent .homeContentList .homeContentItem_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35px;
+  height: 35px;
+  background-color: #f9564f;
+  margin: 20px 2px;
+  border-radius: 50%;
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.home .homeContent .homeContentList .homeContentItem_link:hover {
+  background-color: #00171f;
+}
+
 .home::before {
   position: absolute;
   content: "";
@@ -88,5 +136,69 @@
   border-radius: 50%;
   background-color: #fff;
   z-index: -1;
+}
+
+.aboutMe .aboutMe_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutMe .aboutMe_content h2 {
+  margin: 10px 0;
+  font-size: 50px;
+  line-height: 60px;
+  color: #00171f;
+}
+
+.aboutMe .aboutMe_content p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #5e6472;
+}
+
+.aboutMe .aboutMe_content .aboutMeProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutMe .aboutMe_content .aboutMeProject .aboutProject_item {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px dashed #f9564f;
+  border-radius: 10px;
+  background-color: #f9564f21;
+}
+
+.aboutMe .aboutMe_content .aboutMeProject .aboutProject_item h2 {
+  color: #f9564f;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.aboutMe .aboutMe_content .aboutMeProject .aboutProject_item p {
+  margin: 5px 0;
+  color: #00171f;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.aboutMe .aboutMe_content .aboutMeProject .aboutProject_item:last-child {
+  margin-left: 30px;
+}
+
+.aboutMe .aboutMe_img {
+  max-width: 45vw;
 }
 /*# sourceMappingURL=main.css.map */

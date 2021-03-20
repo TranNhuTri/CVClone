@@ -1,52 +1,65 @@
 @import 'var';
-.appHeader
+.appContainer
 {
+    width: 100vw;
+}
+.header
+{
+    width: 100vw;
     position: fixed;
-    height: 80px;
-    font-size: 14rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     z-index: 1;
-    .appHeader_link
+    .appHeader
     {
-        position: relative;
-        font-size: 28rem;
-        text-decoration: none;
-        color: $text-color;
-        font-weight: 600;
-        .appHeader_dot
-        {
-            position: absolute;
-            width: 6px;
-            height: 6px;
-            right: -8px;
-            top: 70%;
-            background-color: $orange-color;
-            border-radius: 10px;
-        }
-    }
-    .appHeader_list
-    {
-        padding: 0;
-        margin: 0;
+        height: 80px;
+        font-size: 14rem;
         display: flex;
-        list-style: none;
-        .appHeader_item
+        justify-content: space-between;
+        align-items: center;
+        .appHeader_link
         {
-            .appHeader_itemLink
+            position: relative;
+            font-size: 28rem;
+            text-decoration: none;
+            color: $text-color;
+            font-weight: 600;
+            .appHeader_dot
             {
-                text-decoration: none;
-                color: $text-color;
-                .appHeader_btn
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                right: -8px;
+                top: 70%;
+                background-color: $orange-color;
+                border-radius: 10px;
+            }
+        }
+        .appHeader_list
+        {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            list-style: none;
+            .appHeader_item
+            {
+                .appHeader_itemLink
                 {
-                    margin: 0 10px;
-                    font-size: 16rem;
-                    font-weight: 600;
+                    text-decoration: none;
+                    color: $text-color;
+                    .appHeader_btn
+                    {
+                        margin: 0 10px;
+                        font-size: 16rem;
+                        font-weight: 600;
+                    }
                 }
             }
         }
     }
+}
+.header--active
+{
+    background-color: #fff;
+    box-shadow: 0 0 20px #ccc;
 }
 .home
 {
@@ -55,7 +68,7 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    z-index: -1;
+    z-index: 0;
     .homeContainer
     {
         .homeImgContainer
@@ -71,6 +84,32 @@
     .homeContent
     {
         padding-top: 30vh;
+        .homeContentList
+        {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            list-style: none;
+            .homeContentItem_link
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                height: 35px;
+                background-color: $orange-color;
+                margin: 20px 2px;
+                border-radius: 50%;
+                font-size: 18px;
+                text-decoration: none;
+                color: #fff;
+                cursor: pointer;
+            }
+            .homeContentItem_link:hover
+            {
+                background-color: $text-color;
+            }
+        }
     }
 }
 .home::before
@@ -84,4 +123,62 @@
     border-radius: 50%;
     background-color: #fff;
     z-index: -1;
+}
+.aboutMe
+{
+    .aboutMe_content
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 
+        {
+            margin: 10px 0;
+            font-size: 50px;
+            line-height: 60px;
+            color: $text-color;
+        }
+        p 
+        {
+            font-size: 18px;
+            line-height: 30px;
+            color: #5e6472;
+        }
+        .aboutMeProject
+        {
+            display: flex;
+            .aboutProject_item
+            {
+                width: 200px;
+                height: 100px;
+                padding: 20px;
+                margin: 10px 0;
+                border: 1px dashed $orange-color;
+                border-radius: 10px;
+                background-color: $pink-color;
+                h2 
+                {
+                    color: $orange-color;
+                    font-size: 30px;
+                    line-height: 30px;
+                    margin: 0;
+                }
+                p 
+                {
+                    margin: 5px 0;
+                    color: $text-color;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            .aboutProject_item:last-child
+            {
+                margin-left: 30px;
+            }
+        }
+    }
+    .aboutMe_img
+    {
+        max-width: 45vw;
+    }
 }

@@ -9,62 +9,66 @@
     <link rel="stylesheet" href="./style/css/layout.css">
     <link rel="stylesheet" href="./style/css/main.css">
     <link rel="stylesheet" href="./style/css/base.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="appContainer">
-        <header class = "appHeader grid" id = "header">
-            <a class = "appHeader_link" href="/">
-                Suzie
-                <div class = "appHeader_dot"></div>
-            </a>
-            <ul class = "appHeader_list">
-                <li class="appHeader_item">
-                    <a class="appHeader_itemLink"href="">
-                        <div class="appHeader_btn button">
-                            Home
-                        </div>
-                    </a>
-                </li>
-                <li class="appHeader_item">
-                    <a class="appHeader_itemLink"href="">
-                        <div class="appHeader_btn button">
-                            About Us
-                        </div>
-                    </a>
-                </li>
-                <li class="appHeader_item">
-                    <a class="appHeader_itemLink"href="">
-                        <div class="appHeader_btn button">
-                            Services
-                        </div>
-                    </a>
-                </li>
-                <li class="appHeader_item">
-                    <a class="appHeader_itemLink"href="">
-                        <div class="appHeader_btn button">
-                            Portfolio
-                        </div>
-                    </a>
-                </li>
-                <li class="appHeader_item">
-                    <a class="appHeader_itemLink"href="">
-                        <div class="appHeader_btn button">
-                            Blog
-                        </div>
-                    </a>
-                </li>
-                <li class="appHeader_item">
-                    <a class="appHeader_itemLink"href="">
-                        <div class="appHeader_btn button">
-                            Contact
-                        </div>
-                    </a>
-                </li>
-            </ul>
+        <header class = "header" id = "header">
+            <div class="appHeader grid">
+                <a class = "appHeader_link" href="/">
+                    Suzie
+                    <div class = "appHeader_dot"></div>
+                </a>
+                <ul class = "appHeader_list">
+                    <li class="appHeader_item">
+                        <a class="appHeader_itemLink"href="./#home">
+                            <div class="appHeader_btn button">
+                                Home
+                            </div>
+                        </a>
+                    </li>
+                    <li class="appHeader_item">
+                        <a class="appHeader_itemLink"href="./#aboutMe">
+                            <div class="appHeader_btn button">
+                                About Us
+                            </div>
+                        </a>
+                    </li>
+                    <li class="appHeader_item">
+                        <a class="appHeader_itemLink"href="">
+                            <div class="appHeader_btn button">
+                                Services
+                            </div>
+                        </a>
+                    </li>
+                    <li class="appHeader_item">
+                        <a class="appHeader_itemLink"href="">
+                            <div class="appHeader_btn button">
+                                Portfolio
+                            </div>
+                        </a>
+                    </li>
+                    <li class="appHeader_item">
+                        <a class="appHeader_itemLink"href="">
+                            <div class="appHeader_btn button">
+                                Blog
+                            </div>
+                        </a>
+                    </li>
+                    <li class="appHeader_item">
+                        <a class="appHeader_itemLink"href="">
+                            <div class="appHeader_btn button">
+                                Contact
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </header>
         <body>
-            <div class="home">
-                <div class="grid homeContainer">
+            <div class="home" id = "home">
+                <div class="homeContainer grid">
                     <div class="grid_row">
                         <div class="homeImgContainer grid_column-6">
                             <img class="homeImgContainer_img" src="./img/home-banner.png" alt="">
@@ -77,12 +81,63 @@
                                 <span style="color: #f9564f; font-size: 30px; font-weight: 700;" id = "textChange"></span>
                                 <span style="color: #f9564f; font-size: 30px; font-weight: 700;" id = "pointer">|</span>
                             </div>
+                            <ul class="homeContentList">
+                                <li class="homeContentItem">
+                                    <a class = "homeContentItem_link" href="/"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="homeContentItem">
+                                    <a class = "homeContentItem_link" href="/"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="homeContentItem">
+                                    <a class = "homeContentItem_link" href="/"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li class="homeContentItem">
+                                    <a class = "homeContentItem_link" href="/"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutMe grid" id = "aboutMe">
+                <div class="grid_row">
+                    <div class="aboutMe_content grid_column-6">
+                        <h2>I Make a professional and creative design</h2>
+                        <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="aboutMeProject">
+                            <div class="aboutProject_item">
+                                <h2>155</h2>
+                                <p>Completed projects</p>
+                            </div>
+                            <div class="aboutProject_item">
+                                <h2>120</h2>
+                                <p>Positive review's</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_column-6">
+                        <img class = "aboutMe_img" src="./img/about-me.png" alt="">
                     </div>
                 </div>
             </div>
         </body>
     </div>
+    <script>
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 900, function(){
+                window.location.hash = hash;
+              });
+            }
+          });
+        });
+    </script>
     <script src="./main.js"></script>
 </body>
 </html>
