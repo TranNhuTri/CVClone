@@ -60,11 +60,13 @@ const appeareOnScroll = new IntersectionObserver((entries, appeareOnScroll) =>
         const width = entry.target.getAttribute('data-target');
         console.log(width)
         if(!entry.isIntersecting)
+        {
+            entry.target.style.width = "20%";
             return;
+        }
         else
         {
             entry.target.style.width = width;
-            appeareOnScroll.unobserve(entry.target);
         }
     })
 }, option)
