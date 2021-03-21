@@ -193,6 +193,55 @@
         {
             font-size: 22px;
         }
+        .experienceSkill_item
+        {
+            display: flex;
+            width: 500px;
+            padding: 15px 0;
+            .experienceSkill_percent
+            {
+                position: relative;
+                height: 30px;
+                width: 20%;
+                background-color: $orange-color;
+                color: #fff;
+                font-size: 12px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                padding : 0 10px;
+                transition: width 0.5s ease-in;
+            }
+            .experienceSkill_rest
+            {
+                height: 30px;
+                flex: 1;
+                background-color: #fff;
+            }
+            .experienceSkill_item_label
+            {
+                position: absolute;
+                text-align: center;
+                padding: 4px 0;
+                right: 0;
+                top: -30%;
+                width: 35px;
+                height: 23px;
+                background-color: $text-color;
+                color: #fff;
+                font-size: 12px;
+            }
+            .experienceSkill_item_label::before
+            {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                content: "";
+                border-left: 8px solid;
+                border-top: 8px solid;
+                border-color: $text-color transparent transparent transparent;
+            }
+        }
     }
     .languageSkill
     {

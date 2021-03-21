@@ -212,6 +212,64 @@
   font-size: 22px;
 }
 
+.skill .experienceSkill .experienceSkill_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  padding: 15px 0;
+}
+
+.skill .experienceSkill .experienceSkill_item .experienceSkill_percent {
+  position: relative;
+  height: 30px;
+  width: 20%;
+  background-color: #f9564f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  -webkit-transition: width 0.5s ease-in;
+  transition: width 0.5s ease-in;
+}
+
+.skill .experienceSkill .experienceSkill_item .experienceSkill_rest {
+  height: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #fff;
+}
+
+.skill .experienceSkill .experienceSkill_item .experienceSkill_item_label {
+  position: absolute;
+  text-align: center;
+  padding: 4px 0;
+  right: 0;
+  top: -30%;
+  width: 35px;
+  height: 23px;
+  background-color: #00171f;
+  color: #fff;
+  font-size: 12px;
+}
+
+.skill .experienceSkill .experienceSkill_item .experienceSkill_item_label::before {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  content: "";
+  border-left: 8px solid;
+  border-top: 8px solid;
+  border-color: #00171f transparent transparent transparent;
+}
+
 .skill .languageSkill .languageSkill_header {
   font-size: 22px;
 }

@@ -49,3 +49,27 @@ window.onscroll = function()
         appHeader.classList.remove("header--active");
     }
 }
+
+const option = {
+    threshold: 1
+};
+
+const appeareOnScroll = new IntersectionObserver((entries, appeareOnScroll) =>
+{
+    entries.forEach(entry => {
+        const width = entry.target.getAttribute('data-target');
+        console.log(width)
+        if(!entry.isIntersecting)
+            return;
+        else
+        {
+            entry.target.style.width = width;
+            appeareOnScroll.unobserve(entry.target);
+        }
+    })
+}, option)
+
+var experienceSkills = document.querySelectorAll(".lengthChange");
+experienceSkills.forEach(e => {
+    appeareOnScroll.observe(e);
+});
