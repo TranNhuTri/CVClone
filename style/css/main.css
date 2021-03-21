@@ -180,11 +180,12 @@
   background-color: #f9564f21;
 }
 
-.aboutMe .aboutMe_content .aboutMeProject .aboutProject_item h2 {
+.aboutMe .aboutMe_content .aboutMeProject .aboutProject_item span {
   color: #f9564f;
   font-size: 30px;
   line-height: 30px;
   margin: 0;
+  font-weight: 600;
 }
 
 .aboutMe .aboutMe_content .aboutMeProject .aboutProject_item p {

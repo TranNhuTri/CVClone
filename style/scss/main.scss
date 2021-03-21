@@ -156,12 +156,13 @@
                 border: 1px dashed $orange-color;
                 border-radius: 10px;
                 background-color: $pink-color;
-                h2 
+                span
                 {
                     color: $orange-color;
                     font-size: 30px;
                     line-height: 30px;
                     margin: 0;
+                    font-weight: 600;
                 }
                 p 
                 {

@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./style/css/base.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 </head>
 <body>
     <div class="appContainer">
@@ -107,11 +109,11 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <div class="aboutMeProject">
                             <div class="aboutProject_item">
-                                <h2>155</h2>
+                                <span class = "counter">155</span>
                                 <p>Completed projects</p>
                             </div>
                             <div class="aboutProject_item">
-                                <h2>120</h2>
+                                <span class = "counter">120</span>
                                 <p>Positive review's</p>
                             </div>
                         </div>
@@ -125,17 +127,23 @@
     </div>
     <script>
         $(document).ready(function(){
-          $("a").on('click', function(event) {
-            if (this.hash !== "") {
-              event.preventDefault();
-              var hash = this.hash;
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top
-              }, 900, function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function(){
                 window.location.hash = hash;
-              });
+                });
+                }
+            });
+            $(".counter").counterUp(
+            {
+                delay: 5,
+                time: 1200
             }
-          });
+            );
         });
     </script>
     <script src="./main.js"></script>
