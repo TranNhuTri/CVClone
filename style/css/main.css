@@ -202,4 +202,74 @@
 .aboutMe .aboutMe_img {
   max-width: 45vw;
 }
+
+.skill {
+  padding: 80px 0;
+  background-color: #f9564f21;
+}
+
+.skill .experienceSkill .experienceSkill_header {
+  font-size: 22px;
+}
+
+.skill .languageSkill .languageSkill_header {
+  font-size: 22px;
+}
+
+.skill .languageSkill .languageSkill_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skill .languageSkill .languageSkill_row .languageSkill_item {
+  width: 255px;
+  background-color: #fff;
+  border: 0.5px solid #cccccc4a;
+  border-radius: 2px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 15px  30px 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill .languageSkill .languageSkill_row .languageSkill_item .languageSkill_item_circle {
+  width: 50px;
+  height: 50px;
+  background-color: #f9564f;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skill .languageSkill .languageSkill_row .languageSkill_item p {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.skill .languageSkill .languageSkill_row .languageSkill_item:hover {
+  -webkit-box-shadow: 0 4px 10px rgba(204, 204, 204, 0.568);
+          box-shadow: 0 4px 10px rgba(204, 204, 204, 0.568);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
 /*# sourceMappingURL=main.css.map */
