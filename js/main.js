@@ -67,6 +67,7 @@ const appeareOnScroll = new IntersectionObserver((entries, appeareOnScroll) =>
         else
         {
             entry.target.style.width = width;
+            appeareOnScroll.unobserve(entry.target);
         }
     })
 }, option)
