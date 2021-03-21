@@ -10,3 +10,23 @@
     background-color: #f9564f;
     transition: all 0.15s ease-in;
 }
+.button--light
+{
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    color: #00171f;
+    cursor: pointer;
+}
+.button--light:hover
+{
+    color: #fff;
+    background-color: #f9564f;
+    border: 1px solid #fff;
+}
