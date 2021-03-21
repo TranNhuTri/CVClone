@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./style/css/layout.css">
     <link rel="stylesheet" href="./style/css/main.css">
     <link rel="stylesheet" href="./style/css/base.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src = "./js/counterUp.js"></script>
 </head>
 <body>
     <div class="appContainer">
@@ -138,14 +138,12 @@
                 });
                 }
             });
-            $(".counter").counterUp(
-            {
-                delay: 5,
-                time: 1200
-            }
-            );
+            $('.counter').counterUp({
+                delay: 10,
+                time:   1000
+            })
         });
     </script>
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
