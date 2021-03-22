@@ -368,7 +368,7 @@
 }
 
 .container {
-  padding: 80px 0;
+  padding: 100px 0 80px 0;
 }
 
 .container .container_headerContainer {
@@ -389,8 +389,8 @@
 }
 
 .container .container_headerContainer .containerHeader h1 {
+  margin: 0;
   position: relative;
-  margin: 0 auto;
   font-size: 40px;
   line-height: 50px;
   color: #00171f;
@@ -523,7 +523,7 @@
 .service .service_item {
   position: relative;
   background-color: #fff;
-  padding: 30px;
+  padding: 40px;
   margin: 20px 0;
   -webkit-box-shadow: 0 0 5px #cccccc91;
           box-shadow: 0 0 5px #cccccc91;
@@ -583,5 +583,87 @@
 .service .service_item:hover::after {
   opacity: 1;
   z-index: -1;
+}
+
+.portfolio .portfolio_row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.portfolio .portfolio_row .portfolio_column {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.portfolio .portfolio_row .portfolio_column .portfolio_item {
+  position: relative;
+  margin: 5px 0 0 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolio_row .portfolio_column .portfolio_item img {
+  width: 100%;
+}
+
+.portfolio .portfolio_row .portfolio_column .portfolio_item .portfolio_infor {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 15px;
+  left: 10px;
+  background-color: black;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolio_row .portfolio_column .portfolio_item .portfolio_infor h2 {
+  padding: 10px 20px;
+  font-size: 26px;
+}
+
+.portfolio .portfolio_row .portfolio_column .portfolio_item .portfolio_infor p {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.portfolio .portfolio_row .portfolio_column .portfolio_item .portfolio_infor .portfolio_infor_button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 40px;
+  line-height: 20px;
+  padding: 15px;
+  background-color: #f9564f;
+  font-weight: 200;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.portfolio .portfolio_row .portfolio_column .portfolio_item:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.portfolio .portfolio_row .portfolio_column .portfolio_item:hover .portfolio_infor {
+  opacity: 0.8;
+}
+
+.full_screen {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: red;
+  z-index: 703;
+  display: none;
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */

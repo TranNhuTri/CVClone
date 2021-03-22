@@ -46,7 +46,7 @@
                         </a>
                     </li>
                     <li class="appHeader_item">
-                        <a class="appHeader_itemLink"href="">
+                        <a class="appHeader_itemLink"href="./#portfolio">
                             <div class="appHeader_btn button">
                                 Portfolio
                             </div>
@@ -69,7 +69,7 @@
                 </ul>
             </div>
         </header>
-        <body>
+        <div class="main">
             <div class="home" id = "home">
                 <div class="homeContainer grid">
                     <div class="grid_row">
@@ -350,7 +350,88 @@
                     </div>
                 </div>
             </div>
-        </body>
+            <div class="portfolio container" id = "portfolio">
+                <div class="grid">
+                    <div class = "portfolio_header container_headerContainer">
+                        <div class = "containerHeader">
+                            <h1>I Love What I Do</h1>
+                        </div>
+                        <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
+                    </div>
+                    <div class="portfolio_row grid_row">
+                        <div class="portfolio_column grid_column-4">
+                            <div class="portfolio_item">
+                                <img src="./img/portfolio-1.jpg" alt="">
+                                <div class="portfolio_infor">
+                                    <h2>Skilly</h2>
+                                    <p>Website design</p>
+                                    <div class="portfolio_infor_button">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio_column grid_column-4">
+                            <div class="portfolio_item">
+                                <img src="./img/portfolio-2.jpg" alt="">
+                                <div class="portfolio_infor">
+                                    <h2>Skilly</h2>
+                                    <p>Website design</p>
+                                    <div class="portfolio_infor_button">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio_column grid_column-4">
+                            <div class="portfolio_item">
+                                <div class="portfolio_item_img">
+                                    <img src="./img/portfolio-3.jpg" alt="">
+                                </div>
+                                <div class="portfolio_infor">
+                                    <h2>Skilly</h2>
+                                    <p>Website design</p>
+                                    <div class="portfolio_infor_button">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio_row grid_row">
+                        <div class="portfolio_column grid_column-4">
+                            <div class="portfolio_item">
+                                <img src="./img/portfolio-4.jpg" alt="">
+                                <div class="portfolio_infor">
+                                    <h2>Skilly</h2>
+                                    <p>Website design</p>
+                                    <div class="portfolio_infor_button">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio_column grid_column-4">
+                            <div class="portfolio_item">
+                                <img src="./img/portfolio-7.jpg" alt="">
+                                <div class="portfolio_infor">
+                                    <h2>Skilly</h2>
+                                    <p>Website design</p>
+                                    <div class="portfolio_infor_button">+</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio_column grid_column-4">
+                            <div class="portfolio_item">
+                                <div class="portfolio_item_img">
+                                    <img src="./img/portfolio-6.jpg" alt="">
+                                </div>
+                                <div class="portfolio_infor">
+                                    <h2>Skilly</h2>
+                                    <p>Website design</p>
+                                    <div class="portfolio_infor_button">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="full_screen">
+
+            </div>
+        </div>
     </div>
     <script>
         $(document).ready(function(){
@@ -359,10 +440,8 @@
                 event.preventDefault();
                 var hash = this.hash;
                 $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 900, function(){
-                window.location.hash = hash;
-                });
+                    scrollTop: $(hash).offset().top - 80,
+                }, 900)
                 }
             });
             $('.counter').counterUp({
